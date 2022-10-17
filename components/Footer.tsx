@@ -124,7 +124,7 @@ const Footer = () => {
 
       <div className="footer__info container">
         <span className="footer__copy">
-          &#169; Bedimcode. All rigths reserved
+          &#169; codeazamat. All rigths reserved
         </span>
 
         <div className="footer__privacy">
