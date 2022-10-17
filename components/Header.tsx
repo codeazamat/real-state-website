@@ -1,10 +1,11 @@
 import Link from 'next/link'
+import { Link as ScrollLink } from 'react-scroll'
 import LogoSvg from '../public/img/svg/logo.svg'
 import HomeLine from '../public/img/svg/home-line.svg'
 import Building from '../public/img/svg/building.svg'
 import Award from '../public/img/svg/award.svg'
 import Phone from '../public/img/svg/phone.svg'
-import {useEffect, useState} from 'react'
+import { useEffect, useState } from 'react'
 
 const Header = () => {
   const [scroll, setScroll] = useState(false)
@@ -25,48 +26,86 @@ const Header = () => {
   return (
     <header className={`header ${scroll ? 'scroll-header' : ''}`}>
       <nav className="nav container">
-        <Link href="/">
-          <a className="nav__logo">
-            Holux <LogoSvg />
-          </a>
-        </Link>
+        <ScrollLink
+          href="#home"
+          className="nav__logo"
+          to="home"
+          hashSpy={true}
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          Holux <LogoSvg />
+        </ScrollLink>
 
         <div className="nav__menu">
           <ul className="nav__list">
             <li className="nav__item">
-              <Link href="#home">
-                <a className="nav__link">
-                  <HomeLine />
-                  <span>Home</span>
-                </a>
-              </Link>
+              <ScrollLink
+                href="#home"
+                className="nav__link"
+                activeClass="active"
+                to="home"
+                hashSpy={true}
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-5}
+              >
+                <HomeLine />
+                <span>Home</span>
+              </ScrollLink>
             </li>
 
             <li className="nav__item">
-              <Link href="#popular">
-                <a className="nav__link">
-                  <Building />
-                  <span>Residences</span>
-                </a>
-              </Link>
+              <ScrollLink
+                href="#popular"
+                className="nav__link"
+                activeClass="active"
+                to="popular"
+                hashSpy={true}
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-5}
+              >
+                <Building />
+                <span>Residences</span>
+              </ScrollLink>
             </li>
 
             <li className="nav__item">
-              <Link href="#value">
-                <a className="nav__link">
-                  <Award />
-                  <span>Value</span>
-                </a>
-              </Link>
+              <ScrollLink
+                href="#value"
+                className="nav__link"
+                activeClass="active"
+                to="value"
+                hashSpy={true}
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-5}
+              >
+                <Award />
+                <span>Value</span>
+              </ScrollLink>
             </li>
 
             <li className="nav__item">
-              <Link href="#contact">
-                <a className="nav__link">
-                  <Phone />
-                  <span>Contact</span>
-                </a>
-              </Link>
+              <ScrollLink
+                href="#contact"
+                className="nav__link"
+                activeClass="active"
+                to="contact"
+                hashSpy={true}
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-5}
+              >
+                <Phone />
+                <span>Contact</span>
+              </ScrollLink>
             </li>
           </ul>
         </div>
