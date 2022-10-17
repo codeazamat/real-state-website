@@ -33,7 +33,10 @@ const Contact = () => {
           <div className="contact__card">
             <div className="contact__card-box">
               <div className="contact__card-info">
-                <CallSvg />
+                <div className="contact__card-icon">
+                  <CallSvg />
+                </div>
+
                 <div>
                   <h3 className="contact__card-title">Call</h3>
                   <p className="contact__card-description">022.321.165.19</p>
@@ -44,7 +47,10 @@ const Contact = () => {
 
             <div className="contact__card-box">
               <div className="contact__card-info">
-                <MessageSvg />
+                <div className="contact__card-icon">
+                  <MessageSvg />
+                </div>
+
                 <div>
                   <h3 className="contact__card-title">Chat</h3>
                   <p className="contact__card-description">022.321.165.19</p>
@@ -55,7 +61,10 @@ const Contact = () => {
 
             <div className="contact__card-box">
               <div className="contact__card-info">
-                <VideoSvg />
+                <div className="contact__card-icon">
+                  <VideoSvg />
+                </div>
+
                 <div>
                   <h3 className="contact__card-title">Video Call</h3>
                   <p className="contact__card-description">022.321.165.19</p>
@@ -66,7 +75,10 @@ const Contact = () => {
 
             <div className="contact__card-box">
               <div className="contact__card-info">
-                <EnveloSvg />
+                <div className="contact__card-icon">
+                  <EnveloSvg />
+                </div>
+
                 <div>
                   <h3 className="contact__card-title">Message</h3>
                   <p className="contact__card-description">022.321.165.19</p>
