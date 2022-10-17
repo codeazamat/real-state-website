@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import HomeSolid from '../public/img/svg/home-solid.svg'
+import LogoSvg from '../public/img/svg/logo.svg'
 import HomeLine from '../public/img/svg/home-line.svg'
 import Building from '../public/img/svg/building.svg'
 import Award from '../public/img/svg/award.svg'
@@ -27,7 +27,7 @@ const Header = () => {
       <nav className="nav container">
         <Link href="/">
           <a className="nav__logo">
-            Holux <HomeSolid />
+            Holux <LogoSvg />
           </a>
         </Link>
 
