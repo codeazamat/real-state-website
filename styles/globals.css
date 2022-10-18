@@ -881,6 +881,35 @@ button {
 }
 
 /*=============== SCROLL UP ===============*/
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -100%;
+  background-color: var(--container-color);
+  box-shadow: 0 8px 12px hsla(228, 66%, 45%, 0.1);
+  display: inline-flex;
+  padding: 0.35rem;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  z-index: var(--z-tooltip);
+  transition: 0.3s;
+}
+
+.scrollup svg {
+  fill: var(--title-color);
+}
+
+.scrollup:hover {
+  transform: translateY(-0.25rem);
+}
+
+.scrollup:hover svg {
+  fill: var(--first-color);
+}
+
+.scrollup.active {
+  bottom: 8rem;
+}
 
 /* Show Scroll Up */
 
